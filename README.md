@@ -8,7 +8,7 @@ Cada proyecto aborda un caso específico y está documentado de forma clara y es
 ---
 
 ## 📁 Estructura del repositorio
-
+```
 Analisis-datos/
 ├── 📁 Analisis-Pareto/
 │ ├── README.md → Descripción del análisis
@@ -27,7 +27,7 @@ Analisis-datos/
 ├── README.md
 └── powerbi/
 └── nombre-analisis-clientes.pbix
-
+```
 
 ## 🚀 Objetivo del repositorio
 
