@@ -9,23 +9,24 @@ Cada proyecto aborda un caso específico y está documentado de forma clara y es
 
 ## 📁 Estructura del repositorio
 
+Analisis-datos/
 ├── 📁 Analisis-Pareto/
-│   ├── README.md          → Descripción del análisis
-│   ├── data/              → Dataset utilizado (CSV, Excel, etc.)
-│   ├── notebook/          → Código o scripts (Python, SQL, etc.) (opcional)
-│   ├── informe/           → Informe final del análisis (.md o PDF)
-│   ├── dashboard/         → Capturas o archivos del dashboard (PNG, JPG)
-│   └── powerbi/           → 📂 Contiene el archivo .pbix del proyecto
+│ ├── README.md → Descripción del análisis
+│ ├── data/ → Dataset utilizado (CSV, Excel, etc.)
+│ ├── notebook/ → Código o scripts (Python, SQL, etc.) (opcional)
+│ ├── informe/ → Informe final del análisis (.md o PDF)
+│ ├── dashboard/ → Capturas o archivos del dashboard (PNG, JPG)
+│ └── powerbi/ → Contiene el archivo .pbix del proyecto
 │
 ├── 📁 Analisis-Cantidad-Vendida/
-│   ├── README.md
-│   └── powerbi/
-│       └── nombre-analisis-cantidad-vendida.pbix
+│ ├── README.md
+│ └── powerbi/
+│ └── nombre-analisis-cantidad-vendida.pbix
 │
 └── 📁 Analisis-Clientes/
-    ├── README.md
-    └── powerbi/
-        └── nombre-analisis-clientes.pbix
+├── README.md
+└── powerbi/
+└── nombre-analisis-clientes.pbix
 
 
 ## 🚀 Objetivo del repositorio
