@@ -1,6 +1,16 @@
 ANALISIS DE VENTAS FICTICIAS
 SET DATOS: https://www.kaggle.com/datasets/kyanyoga/sample-sales-data?resource=download
 
+## 📦 Acerca del Dataset
+
+Este conjunto de datos representa el historial de ventas de una compañía dedicada a la comercialización de productos coleccionables como autos clásicos, trenes, aviones y barcos a escala. 
+La información incluye datos detallados de cada transacción realizada por los clientes, permitiendo analizar tanto el comportamiento de compra como el rendimiento de los productos ofrecidos.
+
+🔎 **Objetivo del análisis:**  
+El propósito es aplicar técnicas de análisis como **Pareto (80/20)** para identificar qué productos o categorías generan el mayor porcentaje de ingresos, qué clientes aportan más al negocio y qué líneas de producto son más rentables.
+Este análisis facilitará la toma de decisiones estratégicas enfocadas en aumentar las ventas, optimizar el inventario y diseñar promociones efectivas.
+
+
 # 📖 Diccionario de Datos - Ventas
 
 | **Nombre**          | **Tipo de dato** | **Descripción**                                                                                              | **Nombre en español**          |
