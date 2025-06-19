@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Analisis-Pareto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "66290b83-69f3-46b6-b298-0f8c5df29c36"
+  }
+}
