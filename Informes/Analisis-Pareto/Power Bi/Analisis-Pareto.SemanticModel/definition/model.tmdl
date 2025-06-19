@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["sales_data_sample"]
+annotation PBI_QueryOrder = ["sales_data_sample","Medidas","Medidas (2)"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -15,6 +15,7 @@ annotation PBIDesktopVersion = 2.144.878.0 (25.06)+9cca29236de5114792f4d7188221f
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table sales_data_sample
+ref table 'Medidas (2)'
 
 ref cultureInfo es-ES
 

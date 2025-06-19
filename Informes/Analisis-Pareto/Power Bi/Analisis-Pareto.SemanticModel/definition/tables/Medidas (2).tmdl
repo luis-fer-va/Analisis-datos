@@ -1,0 +1,40 @@
+table 'Medidas (2)'
+	lineageTag: 0d79112f-4921-41b3-9e77-ff42020a9b3e
+
+	measure Total_registros = COUNTROWS(sales_data_sample)
+		formatString: 0
+		lineageTag: 805aff8e-fa8c-40dd-85ac-d864c8fc598e
+
+	measure Venta = sum(sales_data_sample[SALES])
+		formatString: #,0
+		lineageTag: 6c8ee5e4-9877-413e-af74-0167b57c6564
+
+	measure parti/venta% = ```
+			DIVIDE([Venta], CALCULATE([Venta],ALLSELECTED(sales_data_sample))) 
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: f57ff317-53d5-4ee2-9922-444b590ebd60
+
+	measure 'Numero ordenes' = DISTINCTCOUNT(sales_data_sample[ORDERNUMBER])
+		formatString: 0
+		lineageTag: b4148356-d460-45b9-9e61-d0cd150b7240
+
+	column Columna1
+		dataType: string
+		lineageTag: df9a9b9e-9ead-493e-b5d8-6a0d17861e34
+		summarizeBy: none
+		sourceColumn: Columna1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Medidas (2)' = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

@@ -3,30 +3,30 @@ table sales_data_sample
 
 	column ORDERNUMBER
 		dataType: int64
-		formatString: 0
+		formatString: #,0
 		lineageTag: 27b4cd7a-cb0f-4a04-9a0d-bbd542b365f4
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: ORDERNUMBER
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column QUANTITYORDERED
 		dataType: int64
-		formatString: 0
+		formatString: #,0
 		lineageTag: 0274e22a-f406-4499-9be2-2030aa9de238
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: QUANTITYORDERED
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column PRICEEACH
 		dataType: int64
-		formatString: 0
+		formatString: #,0
 		lineageTag: 66fa4e40-6f22-4ff8-920c-2997719088e9
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PRICEEACH
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column ORDERLINENUMBER
 		dataType: int64
@@ -39,12 +39,12 @@ table sales_data_sample
 
 	column SALES
 		dataType: int64
-		formatString: 0
+		formatString: #,0
 		lineageTag: b44976f4-fa23-4b2b-bd5d-7891d57bff42
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: SALES
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column ORDERDATE
 		dataType: string
@@ -75,19 +75,19 @@ table sales_data_sample
 		dataType: int64
 		formatString: 0
 		lineageTag: 06195b00-9e05-49e4-82ec-1ce9227e24ae
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: MONTH_ID
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column YEAR_ID
 		dataType: int64
 		formatString: 0
 		lineageTag: 49f36b50-9631-43e7-8dfa-6b8716c4c804
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: YEAR_ID
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column PRODUCTLINE
 		dataType: string
